@@ -4,7 +4,7 @@ ruby '2.2.2'
 
 gem 'rails', '~> 4.0.13'
 gem 'sass-rails', '~> 4.0.0'
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '>= 2.5.3'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'figaro'
@@ -33,10 +33,10 @@ gem 'angular-rails-templates'
 gem 'actionpack-action_caching'
 gem 'turnout'
 
-gem 'firebase'
+gem 'firebase', '>= 0.2.2'
 gem "eventmachine", "~> 1.0.8"
 gem "em-http-request", "~> 1.1.2"
-gem "httparty", "~> 0.13.5"
+gem "httparty", "~> 0.14.0"
 gem 'statsd-ruby'
 
 group :development do
