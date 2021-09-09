@@ -43,7 +43,7 @@ group :development do
   gem 'capistrano', '< 3.0.0'
   gem 'rvm-capistrano', require: false
   gem 'sqlite3'
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.8.0'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :mri_21, :rbx]
   gem 'html2haml'
   gem 'quiet_assets'
@@ -69,7 +69,7 @@ group :development, :test do
   gem 'factory_girl_rails'
 end
 group :test do
-  gem 'capybara'
+  gem 'capybara', '>= 2.4.3'
   gem 'minitest-spec-rails'
   gem 'minitest-wscolor'
 end
