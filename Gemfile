@@ -2,10 +2,10 @@ source 'https://rubygems.org'
 
 ruby '2.2.2'
 
-gem 'rails', '~> 4.0.13'
-gem 'sass-rails', '~> 4.0.0'
+gem 'rails', '~> 5.0.0'
+gem 'sass-rails', '~> 5.0.5'
 gem 'uglifier', '>= 1.3.0'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 gem 'jbuilder', '~> 1.2'
 gem 'figaro'
 gem 'haml-rails'
@@ -20,7 +20,7 @@ gem 'aws-s3'
 gem 'open_uri_redirections'
 gem 'simple_enum', '~> 1.6.9'
 gem 'whenever'
-gem 'thin'
+gem 'thin', '>= 1.7.0'
 gem 'rails-api'
 gem 'active_model_serializers', '0.9.0.alpha1'
 gem 'delayed_job_active_record'
@@ -30,8 +30,8 @@ gem 'simple-rss'
 gem 'rest-client'
 gem 'angularjs-rails', '1.3.9'
 gem 'angular-rails-templates'
-gem 'actionpack-action_caching'
-gem 'turnout'
+gem 'actionpack-action_caching', '>= 1.2.0'
+gem 'turnout', '>= 2.4.0'
 
 gem 'firebase'
 gem "eventmachine", "~> 1.0.8"
@@ -70,6 +70,6 @@ group :development, :test do
 end
 group :test do
   gem 'capybara'
-  gem 'minitest-spec-rails'
+  gem 'minitest-spec-rails', '>= 5.3.0'
   gem 'minitest-wscolor'
 end
