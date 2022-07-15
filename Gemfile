@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.2.2'
 
-gem 'rails', '~> 4.0.13'
+gem 'rails', '~> 5.2.8', '>= 5.2.8.1'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
@@ -70,6 +70,6 @@ group :development, :test do
 end
 group :test do
   gem 'capybara'
-  gem 'minitest-spec-rails'
+  gem 'minitest-spec-rails', '>= 5.3.0'
   gem 'minitest-wscolor'
 end
