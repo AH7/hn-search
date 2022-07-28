@@ -2,11 +2,11 @@ source 'https://rubygems.org'
 
 ruby '2.2.2'
 
-gem 'rails', '~> 4.0.13'
-gem 'sass-rails', '~> 4.0.0'
+gem 'rails', '~> 5.2.8', '>= 5.2.8.1'
+gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder', '~> 1.5', '>= 1.5.3'
 gem 'figaro'
 gem 'haml-rails'
 gem 'bitters'
@@ -22,8 +22,8 @@ gem 'simple_enum', '~> 1.6.9'
 gem 'whenever'
 gem 'thin'
 gem 'rails-api'
-gem 'active_model_serializers', '0.9.0.alpha1'
-gem 'delayed_job_active_record'
+gem 'active_model_serializers', '0.9.0'
+gem 'delayed_job_active_record', '>= 4.1.3'
 gem 'bluepill', '~> 0.1.1'
 gem 'groupdate', git: 'https://github.com/mieko/groupdate.git', branch: 'sqlite3'
 gem 'simple-rss'
@@ -70,6 +70,6 @@ group :development, :test do
 end
 group :test do
   gem 'capybara'
-  gem 'minitest-spec-rails'
+  gem 'minitest-spec-rails', '>= 5.3.0'
   gem 'minitest-wscolor'
 end
