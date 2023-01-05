@@ -36,7 +36,7 @@ gem 'turnout'
 gem 'firebase'
 gem "eventmachine", "~> 1.0.8"
 gem "em-http-request", "~> 1.1.2"
-gem "httparty", "~> 0.13.5"
+gem "httparty", "~> 0.21.0"
 gem 'statsd-ruby'
 
 group :development do
