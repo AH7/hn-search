@@ -2,16 +2,16 @@ source 'https://rubygems.org'
 
 ruby '2.2.2'
 
-gem 'rails', '~> 4.0.13'
-gem 'sass-rails', '~> 4.0.0'
+gem 'rails', '~> 4.1.0'
+gem 'sass-rails', '~> 4.0.4'
 gem 'uglifier', '>= 1.3.0'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 3.1.3'
 gem 'jbuilder', '~> 1.2'
-gem 'figaro'
-gem 'haml-rails'
-gem 'bitters'
-gem 'bourbon'
-gem 'neat'
+gem 'figaro', '>= 1.2.0'
+gem 'haml-rails', '>= 0.6.0'
+gem 'bitters', '>= 1.0.0'
+gem 'bourbon', '>= 3.2.4'
+gem 'neat', '>= 1.6.0'
 gem 'therubyracer', '0.12.2'
 gem 'hogan_assets'
 gem 'jquery-cookie-rails'
@@ -21,7 +21,7 @@ gem 'open_uri_redirections'
 gem 'simple_enum', '~> 1.6.9'
 gem 'whenever'
 gem 'thin'
-gem 'rails-api'
+gem 'rails-api', '>= 0.3.0'
 gem 'active_model_serializers', '0.9.0.alpha1'
 gem 'delayed_job_active_record'
 gem 'bluepill', '~> 0.1.1'
@@ -29,7 +29,7 @@ gem 'groupdate', git: 'https://github.com/mieko/groupdate.git', branch: 'sqlite3
 gem 'simple-rss'
 gem 'rest-client'
 gem 'angularjs-rails', '1.3.9'
-gem 'angular-rails-templates'
+gem 'angular-rails-templates', '>= 0.1.4'
 gem 'actionpack-action_caching'
 gem 'turnout'
 
@@ -46,30 +46,30 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :mri_21, :rbx]
   gem 'html2haml'
-  gem 'quiet_assets'
+  gem 'quiet_assets', '>= 1.1.0'
   gem 'rails_layout'
-  gem 'guard-bundler'
-  gem 'guard-rails'
-  gem 'guard-rspec'
+  gem 'guard-bundler', '>= 2.2.0'
+  gem 'guard-rails', '>= 0.7.1'
+  gem 'guard-rspec', '>= 4.5.1'
   gem 'guard-pow', require: false
   gem 'hub', :require=>nil
   gem 'rb-fchange', :require=>false
   gem 'rb-fsevent', :require=>false
   gem 'rb-inotify', :require=>false
   gem 'spring-commands-rspec'
-  gem 'guard-livereload',        :require => false
+  gem 'guard-livereload', '>= 2.5.0', :require => false
   gem 'rack-livereload'
   gem 'terminal-notifier-guard'
 end
 group :production do
   gem 'mysql2'
-  gem "lograge"
+  gem "lograge", ">= 0.3.1"
 end
 group :development, :test do
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.5.0'
 end
 group :test do
-  gem 'capybara'
-  gem 'minitest-spec-rails'
+  gem 'capybara', '>= 2.4.4'
+  gem 'minitest-spec-rails', '>= 4.7.8'
   gem 'minitest-wscolor'
 end
