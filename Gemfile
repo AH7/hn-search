@@ -69,7 +69,7 @@ group :development, :test do
   gem 'factory_girl_rails'
 end
 group :test do
-  gem 'capybara'
+  gem 'capybara', '>= 2.4.4'
   gem 'minitest-spec-rails'
   gem 'minitest-wscolor'
 end
